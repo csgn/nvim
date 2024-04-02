@@ -13,7 +13,8 @@ lsp_zero.format_on_save({
     },
     servers = {
         ['tsserver'] = {'javascript', 'typescript'},
-        ['ruff_lsp'] = {'python'}
+        ['ruff_lsp'] = {'python'},
+        ['metals'] = {'scala'},
     }
 })
 
