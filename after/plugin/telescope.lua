@@ -24,7 +24,10 @@ require('telescope').setup {
             "venv",
             "build",
             "dist",
-            "*.lock"
+            "*.lock",
+            ".bloop",
+            ".metals",
+            "target"
         }
     },
     pickers = {

@@ -1,7 +1,4 @@
 require'nvim-treesitter.configs'.setup {
-  -- A list of parser names, or "all"
-  ensure_installed = { "vimdoc", "javascript", "typescript", "c", "lua", "rust", "python" },
-
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
 
@@ -9,9 +6,14 @@ require'nvim-treesitter.configs'.setup {
   -- Recommendation: set to false if you don't have `tree-sitter` CLI installed locally
   auto_install = true,
 
+  ignore_install = { "scala" },
+
+
   highlight = {
     -- `false` will disable the whole extension
     enable = true,
+
+    disable = { "scala" },
 
     -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
     -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
