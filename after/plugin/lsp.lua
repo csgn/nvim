@@ -13,10 +13,10 @@ lsp_zero.format_on_save({
     },
     servers = {
         ['tsserver'] = {'javascript', 'typescript'},
-        ['rust_analyzer'] = {'rust'},
-        ['jedi_language_server'] = {'py'}
+        ['ruff_lsp'] = {'python'}
     }
 })
+
   
 
 lsp_zero.set_sign_icons({
@@ -33,18 +33,10 @@ require('mason-lspconfig').setup({
   ensure_installed = {
     'tsserver',
     'eslint',
-    'rust_analyzer',
+    'ruff_lsp',
   },
   handlers = {
     lsp_zero.default_setup,
-    tsserver = function()
-        require('lspconfig').tsserver.setup({
-          single_file_support = false,
-          on_attach = function(client, bufnr)
-            print('hello tsserver')
-          end
-        })
-      end,
   },
 })
 
