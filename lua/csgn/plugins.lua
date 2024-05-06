@@ -63,6 +63,19 @@ local plugins = {
   {'williamboman/mason-lspconfig.nvim'},
 
   {
+      "NeogitOrg/neogit",
+      name = "neogit",
+      dependencies = {
+        "nvim-lua/plenary.nvim",         -- required
+        "sindrets/diffview.nvim",        -- optional - Diff integration
+
+        -- Only one of these is needed, not both.
+        "nvim-telescope/telescope.nvim", -- optional
+      },
+      config = true
+  },
+
+  {
     "scalameta/nvim-metals",
     dependencies = {
       "nvim-lua/plenary.nvim",
@@ -87,6 +100,8 @@ local plugins = {
       })
     end
   }
+
+
 
 }
 

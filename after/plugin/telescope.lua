@@ -27,6 +27,7 @@ require('telescope').setup {
             "*.lock",
             ".bloop",
             ".metals",
+            ".idea",
             "target"
         }
     },
