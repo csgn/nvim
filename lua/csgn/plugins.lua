@@ -21,6 +21,14 @@ local plugins = {
         vim.cmd('colorscheme rose-pine')
     end
   },
+
+  -- trouble
+  {
+     "folke/trouble.nvim",
+     name = "trouble",
+     dependencies = { "nvim-tree/nvim-web-devicons" }
+  },
+
   { "catppuccin/nvim", name = "catppuccin" },
 
   -- harpoon2
