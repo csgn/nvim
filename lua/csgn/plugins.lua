@@ -107,9 +107,7 @@ local plugins = {
         group = nvim_metals_group,
       })
     end
-  }
-
-
+  },
 
 }
 

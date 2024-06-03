@@ -21,10 +21,10 @@ lsp_zero.format_on_save({
   
 
 lsp_zero.set_sign_icons({
-    error = '', -- https://fontawesome.com/icons/bomb?f=classic&s=solid
-    warn = '', -- https://fontawesome.com/icons/circle-exclamation?f=classic&s=solid
-    hint = '', -- https://fontawesome.com/icons/lightbulb?f=classic&s=solid 
-    info = '' -- https://fontawesome.com/icons/circle-info?f=classic&s=solid
+    error = '🚨', -- https://fontawesome.com/icons/bomb?f=classic&s=solid
+    warn = '⚠️', -- https://fontawesome.com/icons/circle-exclamation?f=classic&s=solid
+    hint = '🤔', -- https://fontawesome.com/icons/lightbulb?f=classic&s=solid 
+    info = '🔎' -- https://fontawesome.com/icons/circle-info?f=classic&s=solid
 })
 
 -- to learn how to use mason.nvim with lsp-zero
