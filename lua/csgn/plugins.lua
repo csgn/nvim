@@ -13,6 +13,12 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
+ --   {
+ --        'csgn/jmpto.nvim',
+ --        name = 'jmpto',
+	-- { dir = '/home/csgn/Playground/jmpto.nvim' },
+ --   },
+
   -- colorscheme
   {
     'rose-pine/neovim',
@@ -21,12 +27,60 @@ local plugins = {
         vim.cmd('colorscheme rose-pine')
     end
   },
+  {
+      'kdheepak/monochrome.nvim',
+      name = 'monochrome',
+  },
+
+  {
+      'jesseleite/nvim-noirbuddy',
+      dependencies = {
+        { 'tjdevries/colorbuddy.nvim' }
+      },
+      lazy = false,
+      priority = 1000,
+      opts = {
+        -- All of your `setup(opts)` will go here
+      },
+   },
 
   -- trouble
   {
      "folke/trouble.nvim",
      name = "trouble",
-     dependencies = { "nvim-tree/nvim-web-devicons" }
+     dependencies = { "nvim-tree/nvim-web-devicons" },
+     keys = {
+        {
+          "<leader>tt",
+          "<cmd>Trouble diagnostics toggle<cr>",
+          desc = "Diagnostics (Trouble)",
+        },
+        {
+          "<leader>tT",
+          "<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
+          desc = "Buffer Diagnostics (Trouble)",
+        },
+        {
+          "<leader>ts",
+          "<cmd>Trouble symbols toggle focus=false<cr>",
+          desc = "Symbols (Trouble)",
+        },
+        {
+          "<leader>tl",
+          "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
+          desc = "LSP Definitions / references / ... (Trouble)",
+        },
+        {
+          "<leader>tL",
+          "<cmd>Trouble loclist toggle<cr>",
+          desc = "Location List (Trouble)",
+        },
+        {
+          "<leader>tQ",
+          "<cmd>Trouble qflist toggle<cr>",
+          desc = "Quickfix List (Trouble)",
+        },
+      },
   },
 
   { "catppuccin/nvim", name = "catppuccin" },
@@ -73,6 +127,7 @@ local plugins = {
   {
       "NeogitOrg/neogit",
       name = "neogit",
+      tag = 'v0.0.1',
       dependencies = {
         "nvim-lua/plenary.nvim",         -- required
         "sindrets/diffview.nvim",        -- optional - Diff integration
