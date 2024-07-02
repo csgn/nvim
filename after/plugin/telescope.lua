@@ -18,17 +18,17 @@ require('telescope').setup {
             }
         },
         file_ignore_patterns = {
-            "node_modules",
-            ".next",
-            ".git",
-            "venv",
-            "build",
-            "dist",
+            "node_modules/",
+            ".next/",
+            ".git/",
+            "venv/",
+            "build/",
+            "dist/",
             "*.lock",
-            ".bloop",
-            ".metals",
-            ".idea",
-            "target"
+            ".bloop/",
+            ".metals/",
+            ".idea/",
+            "target/"
         }
     },
     pickers = {
