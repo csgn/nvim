@@ -113,7 +113,15 @@ local plugins = {
   {
     "nvim-treesitter/nvim-treesitter",
     name = 'treesitter',
-    build = ":TSUpdate"
+    build = ":TSUpdate",
+    dependencies = { "HiPhish/nvim-ts-rainbow2" },
+    opts = function(_, opts)
+      opts.rainbow = {
+        enable = true,
+        query = "rainbow-parens",
+        strategy = require("ts-rainbow").strategy.global,
+      }
+    end,
   },
 
   {'VonHeikemen/lsp-zero.nvim', name = 'lsp-zero', branch = 'v3.x'},
@@ -164,7 +172,12 @@ local plugins = {
     end
   },
 
+  {
+    "nvim-telescope/telescope-file-browser.nvim",
+    dependencies = { {"nvim-telescope/telescope.nvim", name = 'telescope'}, "nvim-lua/plenary.nvim" }
+    },
 }
+
 
 local opts = {}
 

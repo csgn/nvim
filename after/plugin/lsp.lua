@@ -15,6 +15,7 @@ lsp_zero.format_on_save({
         ['tsserver'] = {'javascript', 'typescript'},
         ['ruff_lsp'] = {'python'},
         ['metals'] = {'scala'},
+        ['stylua'] = {'lua'},
     }
 })
 
@@ -54,7 +55,7 @@ cmp.setup({
     ['<C-k>'] = cmp.mapping.select_prev_item({behavior = 'select'}),
     ['<C-j>'] = cmp.mapping.select_next_item({behavior = 'select'}),
     ['<C-u>'] = cmp.mapping.scroll_docs(-4),
-    ['<C-d>'] = cmp.mapping.scroll_docs(4),   
+    ['<C-d>'] = cmp.mapping.scroll_docs(4),
   },
   snippet = {
     expand = function(args)
