@@ -168,6 +168,13 @@ local plugins = {
         "nvim-telescope/telescope-file-browser.nvim",
         dependencies = {{"nvim-telescope/telescope.nvim", name = "telescope"}, "nvim-lua/plenary.nvim"}
     },
+    {
+        dir = "/home/csgn/Workspaces/dokin.nvim",
+        name = "dokin",
+        config = function ()
+            require("dokin")
+        end
+    }
 }
 
 local opts = {}
