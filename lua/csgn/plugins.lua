@@ -42,6 +42,18 @@ local plugins = {
         priority = 1000,
         opts = {}
     },
+    {
+        "t184256/vim-boring",
+        name = "boring",
+        lazy = false,
+        priority = 1000,
+    },
+    {
+        "csgn/nolife.nvim",
+        name = "nolife",
+        lazy = false,
+        priority = 1000,
+    },
     -- trouble
     {
         "folke/trouble.nvim",
