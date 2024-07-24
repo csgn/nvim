@@ -17,7 +17,7 @@ vim.opt.smartindent = true -- make indenting smarter again
 vim.opt.cursorline = true  -- highlight the current line
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
-vim.opt.wrap = true -- display lines as one long line
+vim.opt.wrap = false -- display lines as one long line
 vim.opt.hlsearch = false
 vim.opt.incsearch = true
 vim.opt.updatetime = 50
@@ -25,12 +25,8 @@ vim.opt.colorcolumn = "80"
 vim.opt.shortmess:append "c"
 vim.opt.nuw = 1
 --vim.opt.signcolumn = "no"
-vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = "#f2af3a", bg = "black", bold = true})
-vim.api.nvim_set_hl(0, 'LineNrAbove', { fg = "white", bg = "#4815d4", bold = false})
-vim.api.nvim_set_hl(0, 'LineNrBelow', { fg = "white", bg = "#ff0d5d", bold = false})
-
-
-
-
+vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = "#fc2b5f", bg = "#000000", bold = true})
+vim.api.nvim_set_hl(0, 'LineNrAbove', { fg = "#ffffff", bg = "#000000", bold = false})
+vim.api.nvim_set_hl(0, 'LineNrBelow', { fg = "#dddddd", bg = "#000000", bold = false})
 vim.cmd "set whichwrap+=<,>,[,],h,l"
 vim.cmd [[set iskeyword+=-]]
