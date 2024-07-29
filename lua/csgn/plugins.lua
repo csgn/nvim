@@ -49,7 +49,7 @@ local plugins = {
         priority = 1000,
     },
     {
-        "csgn/nolife.nvim",
+        dir = "/home/csgn/Workspaces/nolife.nvim",
         name = "nolife",
         lazy = false,
         priority = 1000,
