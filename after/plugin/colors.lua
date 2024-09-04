@@ -1,7 +1,7 @@
 require("noirbuddy").setup {
     colors = {
         background = '#000000',
-        primary = '#cccccc',
+        primary = '#777777',
         diagnostic_error = '#EC0034',
         diagnostic_warning = '#ff7700',
         diagnostic_info = '#d5d5d5',

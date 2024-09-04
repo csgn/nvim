@@ -25,7 +25,7 @@ vim.opt.colorcolumn = "80"
 vim.opt.shortmess:append "c"
 vim.opt.nuw = 1
 --vim.opt.signcolumn = "no"
-vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = "#fc2b5f", bg = "#000000", bold = true})
+vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = "#7F00FF", bg = "#000000", bold = true})
 vim.api.nvim_set_hl(0, 'LineNrAbove', { fg = "#ffffff", bg = "#000000", bold = false})
 vim.api.nvim_set_hl(0, 'LineNrBelow', { fg = "#dddddd", bg = "#000000", bold = false})
 vim.cmd "set whichwrap+=<,>,[,],h,l"
