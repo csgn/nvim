@@ -112,8 +112,7 @@ require("lazy").setup({
       -- any messages from metals. There is more info in the help docs about this
       metals_config.init_options.statusBarProvider = "off"
 
-      -- Example if you are using cmp  to make sure the correct capabilities for snippets are set
-      metals_config.capabilities = require("cmp_nvim_lsp").default_capabilities()
+      metals_config.capabilities = require("lsp-zero").get_capabilities()
 
       metals_config.on_attach = function(client, bufnr)
         require("metals").setup_dap()
@@ -133,30 +132,6 @@ require("lazy").setup({
 
         map("n", "<leader>ws", function()
           require("metals").hover_worksheet()
-        end)
-
-        -- all workspace diagnostics
-        map("n", "<leader>aa", vim.diagnostic.setqflist)
-
-        -- all workspace errors
-        map("n", "<leader>ae", function()
-          vim.diagnostic.setqflist({ severity = "E" })
-        end)
-
-        -- all workspace warnings
-        map("n", "<leader>aw", function()
-          vim.diagnostic.setqflist({ severity = "W" })
-        end)
-
-        -- buffer diagnostics only
-        map("n", "<leader>d", vim.diagnostic.setloclist)
-
-        map("n", "[c", function()
-          vim.diagnostic.goto_prev({ wrap = false })
-        end)
-
-        map("n", "]c", function()
-          vim.diagnostic.goto_next({ wrap = false })
         end)
 
         -- Example mappings for usage with nvim-dap. If you don't use that, you can
