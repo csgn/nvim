@@ -1,9 +1,13 @@
-function ColorMyPencils(color)
-	color = color or "nolife"
-	vim.cmd.colorscheme(color)
-
-	--vim.api.nvim_set_hl(0, "Normal", { bg = "#01014d" })
-	--vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-end
-
-ColorMyPencils()
+require("noirbuddy").setup {
+    colors = {
+        background = '#000000',
+        primary = '#cccccc',
+        diagnostic_error = '#EC0034',
+        diagnostic_warning = '#ff7700',
+        diagnostic_info = '#d5d5d5',
+        diagnostic_hint = '#f5f5f5',
+        diff_add = '#f5f5f5',
+        diff_change = '#737373',
+        diff_delete = '#EC0034',
+    },
+}
