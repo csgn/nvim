@@ -2,6 +2,9 @@ local builtin = require 'telescope.builtin'
 local actions = require 'telescope.actions'
 local grep_args = { '--hidden', '--glob', '!**/.git/*' }
 
+require("telescope").load_extension "file_browser"
+vim.keymap.set("n", "<space>fb", ":Telescope file_browser<CR>")
+vim.keymap.set("n", "<space>fB", ":Telescope file_browser path=%:p:h select_buffer=true<CR>")
 
 vim.keymap.set('n', '<leader><leader>', builtin.find_files, {})
 vim.keymap.set('n', '<leader>gg', builtin.git_files, {})
@@ -48,6 +51,3 @@ require('telescope').setup {
     },
 }
 
-require("telescope").load_extension "file_browser"
-vim.keymap.set("n", "<space>fb", ":Telescope file_browser<CR>")
-vim.keymap.set("n", "<space>fB", ":Telescope file_browser path=%:p:h select_buffer=true<CR>")
