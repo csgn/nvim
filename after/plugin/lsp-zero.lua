@@ -15,9 +15,10 @@ lsp_zero.format_on_save({
         ['tsserver'] = {'javascript', 'typescript'},
         ['ruff_lsp'] = {'python'},
         ['metals'] = {'scala'},
+        ['gopls'] = {'go'},
+        ['clangd'] = {'c', 'cpp'},
     }
 })
-
 
 lsp_zero.set_sign_icons({
     error = '󰚌', -- https://fontawesome.com/icons/bomb?f=classic&s=solid

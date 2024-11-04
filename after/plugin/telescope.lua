@@ -7,6 +7,7 @@ vim.keymap.set('n', '<leader>gg', builtin.git_files, {})
 vim.keymap.set('n', '<leader>gp', function()
     builtin.grep_string({ search = vim.fn.input("[Grep] ") });
 end)
+vim.keymap.set("n", "<space>ff", ":Telescope file_browser<CR>")
 
 require('telescope').setup {
     defaults = {
@@ -47,3 +48,4 @@ require('telescope').setup {
     },
 }
 
+require("telescope").load_extension "file_browser"
