@@ -302,6 +302,24 @@ require("lazy").setup({
             }
         end
     },
+    {
+        "rachartier/tiny-glimmer.nvim",
+        event = "TextYankPost",
+        opts = {
+            default_animation = "fade",
+            animations = {
+                fade = {
+                    max_duration = 300,
+                    chars_for_max_duration = 40,
+                    lingering_time = 50,
+                    to_color = "#FF00FF",
+                },
+            }
+        },
+    },
+    {
+        "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+    }
 })
 
 ----------------------------------
