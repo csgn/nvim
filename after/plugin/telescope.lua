@@ -28,7 +28,9 @@ require('telescope').setup {
             ".bloop/",
             ".metals/",
             ".idea/",
-            "target/"
+            "target/",
+            ".godot",
+            "addons",
         }
     },
     pickers = {

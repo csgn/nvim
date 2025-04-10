@@ -17,7 +17,9 @@ lsp_zero.format_on_save({
         ['metals'] = {'scala'},
         ['gopls'] = {'go'},
         ['clangd'] = {'c', 'cpp'},
-        ['hls'] = {'haskell', 'lhaskell', 'cabal'}
+        ['hls'] = {'haskell', 'lhaskell', 'cabal'},
+        ['omnisharp'] = {'cs'}
+
     }
 })
 
