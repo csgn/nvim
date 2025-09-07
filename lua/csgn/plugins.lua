@@ -304,7 +304,7 @@ require("lazy").setup({
 	},
 	{
 		"rachartier/tiny-glimmer.nvim",
-		event = "TextYankPost",
+		event = "VeryLazy",
 		opts = {
 			default_animation = "fade",
 			animations = {

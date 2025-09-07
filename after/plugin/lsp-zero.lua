@@ -18,8 +18,8 @@ lsp_zero.format_on_save({
         ['gopls'] = {'go'},
         ['clangd'] = {'c', 'cpp'},
         ['hls'] = {'haskell', 'lhaskell', 'cabal'},
-        ['omnisharp'] = {'cs'}
-
+        ['omnisharp'] = {'cs'},
+		['glsl_analyzer'] = {'frag', 'vert'}
     }
 })
 
