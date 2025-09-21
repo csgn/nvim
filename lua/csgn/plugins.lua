@@ -363,6 +363,10 @@ require("lazy").setup({
 	},
 	{
 		"HiPhish/rainbow-delimiters.nvim"
+	},
+	{
+		'nvim-lualine/lualine.nvim',
+		dependencies = { 'nvim-tree/nvim-web-devicons' }
 	}
 
 })
